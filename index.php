@@ -17,8 +17,12 @@
             //vytvoříme objekt
             $kalkulator = new Kalkulacka();
 
-            //zavoláme operaci sčítání
+            //zavolání operací z classy Kalkulacka
             $kalkulator->scitani($n1, $n2);
+            $kalkulator->odcitani($n1, $n2);
+            $kalkulator->nasobeni($n1, $n2);
+            $kalkulator->deleni($n1, $n2);
+
         }
 
 
