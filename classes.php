@@ -4,23 +4,28 @@
         public $secondNumber;
 
         public function scitani($firstNumber, $secondNumber){
-            echo $firstNumber + $secondNumber;
+            echo "Součet: ".($firstNumber + $secondNumber);
             echo "<br>";
         }
 
         public function odcitani($firstNumber, $secondNumber){
-            echo $firstNumber - $secondNumber;
+            echo "Rozdíl: ".($firstNumber - $secondNumber);
             echo "<br>";
         }
 
         public function nasobeni($firstNumber, $secondNumber){
-            echo $firstNumber * $secondNumber;
+            echo "Násobek: ".($firstNumber * $secondNumber);
             echo "<br>";
         }
 
         public function deleni($firstNumber, $secondNumber){
-            echo $firstNumber / $secondNumber;
-            echo "<br>";
+            if($secondNumber != 0){
+                echo "Podíl: ".($firstNumber / $secondNumber);
+                echo "<br>";
+            } else{
+                echo "POZOR, snažíte se dělit nulou";
+            }
+
         }
     }
 ?>
