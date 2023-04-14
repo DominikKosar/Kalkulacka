@@ -7,6 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <?php
+        include "classes.php";
+    ?>
+
+    <form action="index.php" method="post">
+        <input type="text" name="number1"><br>
+        <input type="text" name="number2"><br>
+        <input type="submit" value="odeslat" name="submit">
+    </form>
 </body>
 </html>
