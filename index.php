@@ -9,6 +9,19 @@
 <body>
     <?php
         include "classes.php";
+
+        if(isset($_POST["submit"])){
+            $n1 = $_POST["number1"];
+            $n2 = $_POST["number2"];
+
+            //vytvoříme objekt
+            $kalkulator = new Kalkulacka();
+
+            //zavoláme operaci sčítání
+            $kalkulator->scitani($n1, $n2);
+        }
+
+
     ?>
 
     <form action="index.php" method="post">
